@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.CommentFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/post_text"
+            android:layout_marginTop="8dp"
+            android:background="#10707070"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_report_problem_black_24dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_more_horiz_black_24dp" />
+
+            <ImageView
+                android:id="@+id/like_icon_rep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                app:srcCompat="@drawable/ic_thumb_up" />
+
+            <TextView
+                android:id="@+id/post_like_rep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/like_icon_rep"
+                android:text="8"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/post_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_name"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toRightOf="@id/post_icon"
+            android:background="@drawable/round_rect"
+            android:padding="5dp"
+            android:text="ance I wanna growup once Again"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/post_icon"
+            android:text="Masum Hossain"
+            android:textColor="#181717"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_user"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

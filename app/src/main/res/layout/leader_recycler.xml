@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#BA000000"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/serial"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="TextView"
+        android:textColor="#FFFEFE"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/icon"
+        android:text="TextView"
+        android:textColor="#FCFBFB"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/audio_bg"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="1"
+        android:textColor="#fff" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/serial"
+        android:src="@drawable/ic_user"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp" />
+</RelativeLayout>

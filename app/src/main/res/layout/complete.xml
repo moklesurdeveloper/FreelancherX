@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/colorPrimary2">
+
+    <LinearLayout
+        android:id="@+id/asa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aa"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+        <TextView
+            android:id="@+id/wrongL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_weight="1"
+            android:text="Correct: 27"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalL"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageVdffiew4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_check_black_24dp" />
+
+        <TextView
+            android:id="@+id/rightL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_weight="1"
+            android:text="Correct: 27"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Total Quiz 100"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Congrats!"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="You Have Successfully Completed Our Contest!"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/padding_10"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:text="Winner list will be published soon on leaderboard!"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView12"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Back To Home"
+        android:textColor="@color/background" />
+</RelativeLayout>

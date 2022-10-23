@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="#EBECFF">
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/ic_more_horiz_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/image_holder"
+        android:layout_marginStart="@dimen/padding_10"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_marginEnd="@dimen/padding_10"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_toRightOf="@id/post_icon"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/like"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/like_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="2dp"
+                        app:srcCompat="@drawable/ic_like" />
+
+                    <TextView
+                        android:id="@+id/post_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/improve"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/like_icon2"
+                        android:layout_width="@dimen/text_22"
+                        android:layout_height="@dimen/text_22"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        app:srcCompat="@drawable/l1" />
+
+                    <TextView
+                        android:id="@+id/post_like2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/comment_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        app:srcCompat="@drawable/ic_comment_white_oval_bubble" />
+
+                    <TextView
+                        android:id="@+id/post_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_name"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/post_time"
+        android:text="Cat A"
+        android:textSize="10sp" />
+
+    <TextView
+        android:autoLink="web"
+        android:id="@+id/post_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_icon"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/text_20"
+        android:layout_toRightOf="@id/post_icon"
+        android:background="#FFFFFF"
+        android:paddingStart="@dimen/text_16"
+        android:paddingTop="@dimen/text_16"
+        android:paddingEnd="@dimen/text_16"
+        android:paddingBottom="@dimen/text_16"
+        android:text="..."
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/image_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:background="#00FFFFFF"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:maxHeight="300dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_group_1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/post_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/post_icon"
+        android:text="No Name"
+        android:textColor="#181717"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_name"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/post_icon"
+        android:text="..."
+        android:textSize="10sp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#40707070" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/post_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_user"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp" />
+
+</RelativeLayout>

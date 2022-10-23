@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WrittingFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/comment_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_recycler"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@id/comment_post"
+            android:background="@drawable/edt_bg"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Translate..."
+            android:inputType="textMultiLine"
+            android:maxHeight="100dp" />
+
+        <TextView
+            android:id="@+id/comment_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_recycler"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary2"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Post"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relative">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Translate it from English to bangla"
+                android:textColor="#161515"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/orginal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/from"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

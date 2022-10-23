@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/frag_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:addStatesFromChildren="false"
+        android:soundEffectsEnabled="false"
+        android:splitMotionEvents="false"
+        android:visibility="visible"
+        app:autoPlay="false"
+        app:showFullScreenButton="true"
+        app:showSeekBar="true"
+        app:showVideoCurrentTime="true"
+        app:showVideoDuration="true"
+        app:showYouTubeButton="false"
+        app:useWebUi="false" />
+
+</LinearLayout>

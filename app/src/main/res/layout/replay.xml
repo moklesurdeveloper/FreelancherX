@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/main_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/constraintLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/replay_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/replay_recycler"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toLeftOf="@id/replay_post"
+                        android:background="@drawable/edt_bg"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="Write A Comment.."
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/replay_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/replay_recycler"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="false"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary2"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="Post"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/replay_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_toRightOf="@id/replay_icon"
+                        android:text="Masum Hossain"
+                        android:textColor="#181717"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/replay_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/replay_icon"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="test"
+                        android:textColor="#090909" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/replay_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/replay_text"
+                        android:paddingRight="10dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/replay_icon"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="1dp"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_user" />
+
+                </RelativeLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

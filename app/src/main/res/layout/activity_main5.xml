@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main5Activity">
+
+    <com.freelancing.x.ExpandableTextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=" 53 Android - Expandable TextView with Animation 86 Remove underline from links in TextView - Android 4 Android Expandable text view with “View More” Button displaying at center after 3 lines 9 TextView expand animation like in Android Market 4 Expand and Collapase in Android 7 Read More button in android 4 Show a Button seeMore When the text in the text view goes out of view 4 How do you create a 'read more' layout in Android? 6 Override TextView ellipsize char('…') with (“… Read more”) -1 How to create a a expandable view in android? see more linked questions… Related 1272 Strange out of memory issue while loading an image to a Bitmap object 1092 Fling gesture detection on grid layout 732 Standard Android Button with a different color 1140 Is quitting an application frowned upon? 1057 How do I display an alert dialog on Android? 980 How to make links in a TextView clickable? 148 How to add a line break in an Android TextView? 211 Android TextView padding between lines 310 Android, How to limit width of TextView (and add three dots at the end of text)? 488 How to hide underbar in EditText Hot Network Questions Can Eduroam decrypt SSL traffic? England - what are some possible reasons that my ancestor only listed his daughters in his will and none of his sons? Can I use my own GPL'ed code in my closed source program? What is the upper deck on converted freighter long-hump 747s used for? Accepting a job offer after rejecting it What was the first electronic computer? What level of exhaustion will a Revivified creature have? What is the difference between library vs dependency? Why is there (almost) no variety to the Hebrew accent in Israel? Short story in which notorious safe-cracker retires but has to use old tools to save girl's life What happens when a player violates two devils' contracts? Why did 8-bit computers choose BASIC dialects as &quot;de facto&quot; command-line interface, instead of contemporary Shell/Lisp dialects? What do supervisors have to gain from a success or failure of a PhD student? Is seeding peppers a must when making hot sauce Results that are widely accepted but no proof has appeared What educational resources could help someone who knows they will time travel to the future? " />
+</LinearLayout>

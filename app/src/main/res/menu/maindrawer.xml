@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/policy"
+            android:icon="@drawable/ic_privacy_icon"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_moreapps"
+            android:icon="@drawable/ic_more_apps_icon"
+            android:title="More Apps" />
+        <item
+            android:id="@+id/nav_rateus"
+            android:icon="@drawable/ic_rate_us_icon"
+            android:title="Rate Us" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_abaout"
+                android:icon="@drawable/ic_about_icon"
+                android:title="About" />
+            <item
+                android:id="@+id/contact"
+                android:icon="@drawable/ic_contact_01"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_icon"
+                android:title="@string/menu_share" />
+
+        </menu>
+    </item>
+
+</menu>

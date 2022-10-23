@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Freelancing X</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Grammar</item>
+        <item>Reading</item>
+
+        <item>Writing</item>
+        <item>Listening</item>
+        <item>Speaking</item>
+    </string-array>
+    <string-array name="category2">
+        <item>All Category</item>
+        <item>Grammar</item>
+        <item>Reading</item>
+
+        <item>Writing</item>
+        <item>Listening</item>
+        <item>Speaking</item>
+    </string-array>
+    <string name="channel_name">Cloudinary</string>
+    <string name="channel_description">Notifications regarding progress and status updates for Cloudinary resources</string>
+    <string name="effect_desc_video_overlay">\u25CF Add video overlay</string>
+    <string name="effect_desc_video_noise">\u25CF Add noise</string>
+    <string name="effect_desc_video_blur">\u25CF Blur video</string>
+    <string name="effect_desc_video_reverse">\u25CF Reverse video</string>
+    <string name="effect_video_fade_in">\u25CF Fade in</string>
+    <string name="effect_desc_face_oilpaint">\u25CF Crop focusing on automatically detected faces\n\u25CF Apply oil paint effect</string>
+    <string name="effect_name_sharpen">Sharpen</string>
+    <string name="effect_name_oil_paint">Oil Paint</string>
+    <string name="effect_name_sepia">Sepia</string>
+    <string name="effect_name_round_corners">Round corners</string>
+    <string name="effect_name_blue">Blue Hue</string>
+    <string name="effect_video_name_rotation">Rotation</string>
+    <string name="effect_video_name_fade_in">Fade In</string>
+    <string name="effect_video_name_overlay">Overlay</string>
+    <string name="effect_video_name_noise">Noise</string>
+    <string name="effect_video_name_blur">Blur</string>
+    <string name="effect_video_name_reverse">Reverse</string>
+    <string name="effect_desc_face_sharpen" />
+    <string name="effect_desc_narrow_sepia" />
+    <string name="effect_desc_face_sat_round" />
+    <string name="effect_desc_wide_blue" />
+    <string name="effect_video_rotate" />
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">open</string>
+    <string name="bannar">ca-app-pub-2574328611948823/6814629408</string>
+</resources>

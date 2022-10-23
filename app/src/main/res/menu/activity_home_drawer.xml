@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/signin"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="Sign In" />
+    <item
+        android:id="@+id/notice"
+        android:icon="@drawable/ic_notice_board"
+        android:title="Notice Board" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about_us_01"
+        android:title="About Us" />
+    <item
+        android:id="@+id/contact"
+        android:icon="@drawable/ic_contact_01"
+        android:title="Contact Us" />
+    <item
+        android:id="@+id/policy"
+        android:icon="@drawable/ic_privacy_01"
+        android:title="Privacy Policy" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_01"
+        android:title="Share Us" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout_01"
+        android:title="Sign Out" />
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/test"
+        android:icon="@drawable/ic_course"
+        android:title="Our Courses" />
+    <item
+        android:id="@+id/live"
+        android:icon="@drawable/ic_practice"
+        android:title="Practice" />
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Profile" />
+</menu>

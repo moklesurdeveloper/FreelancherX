@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C54002</color>
+    <color name="colorPrimary2">#6564FF</color>
+    <color name="colorPrimaryDark">#005B9F</color>
+    <color name="colorPrimaryDark2">#4241A8</color>
+    <color name="colorAccent">#6564FF</color>
+    <color name="white">#0288D1</color>
+    <color name="background">#DDDDDD</color>
+    <color name="red_300">#E57373</color>
+    <color name="red_400">#EF5350</color>
+    <color name="text_color">#FFFFFF</color>0
+    <color name="improve">#304FFE</color>
+    <color name="improve_click">#2639A3</color>
+    <color name="like_click">#0A3E5E</color>
+    <color name="like">#0091EA</color>
+    <color name="react">#00BFA5</color>
+    <color name="react_click">#07685B</color>
+    <color name="n">#FCFCFC</color>
+    <color name="like_clickj">#C0C0C0</color>
+    <color name="normal">#2C2C2C</color>
+    <color name="select">#A7403E3E</color>
+    <color name="white_bg">#fff</color>
+    <color name="normal2">#7BAFAFAF</color>
+    <color name="select2">#A7454545</color>
+</resources>
